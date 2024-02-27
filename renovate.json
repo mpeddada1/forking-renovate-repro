@@ -11,17 +11,6 @@
       "matchStrings": ["value: \"gcr.io/cloud-devrel-public-resources/graalvm.*:(?<currentValue>.*?)\""],
       "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
       "datasourceTemplate": "maven"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "^.cloudbuild/cloudbuild.yaml"
-      ],
-      "matchStrings": [
-        "  _JAVA_SHARED_CONFIG_VERSION: \"(?<currentValue>.+?)\""
-      ],
-      "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
-      "datasourceTemplate": "maven"
     }
   ],
   "enabledManagers": [
