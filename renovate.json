@@ -2,6 +2,17 @@
   "extends": [
     "config:base"
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^.kokoro/presubmit/graalvm-.*.cfg$"
+      ],
+      "matchStrings": ["value: \"gcr.io/cloud-devrel-public-resources/graalvm.*:(?<currentValue>.*?)\""],
+      "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
+      "datasourceTemplate": "maven"
+    }
+  ],
   "enabledManagers": [
     "regex"
   ],
@@ -24,5 +35,14 @@
       "depNameTemplate": "ubuntu",
       "datasourceTemplate": "docker"
     }
-  ]
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^com.google.cloud:google-cloud-shared-config"
+      ],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
+    }
+    ]
 }
