@@ -15,7 +15,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "^.cloudbuild/*"
+        "^.cloudbuild/cloudbuild.yaml"
       ],
       "matchStrings": [
         "_JAVA_SHARED_CONFIG_VERSION: \"(?<currentValue>.+?)\""
