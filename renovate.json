@@ -35,5 +35,15 @@
       "depNameTemplate": "ubuntu",
       "datasourceTemplate": "docker"
     }
-  ]
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^com.google.cloud:google-cloud-shared-config"
+      ],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "enabled": true
+    }
+    ]
 }
