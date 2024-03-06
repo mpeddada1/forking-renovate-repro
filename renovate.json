@@ -17,7 +17,7 @@
       "fileMatch": [
         "^.cloudbuild/cloudbuild.yaml"
       ],
-      "matchStrings": ["  _JAVA_SHARED_CONFIG_VERSION: \"(?<currentValue>.+?)\""],
+      "matchStrings": ["  _JAVA_SHARED_CONFIG_VERSION: '(?<currentValue>.+?)'"],
       "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
       "datasourceTemplate": "maven"
     }
