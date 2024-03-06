@@ -2,10 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "includePaths": [
-    "pom.xml",
-    "sdk-platform-java-config/pom.xml"
-    ],
   "customManagers": [
     {
       "customType": "regex",
@@ -55,8 +51,7 @@
         "^com.google.cloud:google-cloud-shared-config"
       ],
       "semanticCommitType": "build",
-      "semanticCommitScope": "deps",
-      "enabled": true
+      "semanticCommitScope": "deps"
     }
   ]
 }
