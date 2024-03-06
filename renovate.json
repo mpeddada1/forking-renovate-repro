@@ -2,6 +2,10 @@
   "extends": [
     "config:base"
   ],
+  "includePaths": [
+    "pom.xml",
+    "sdk-platform-java-config/pom.xml"
+    ],
   "customManagers": [
     {
       "customType": "regex",
