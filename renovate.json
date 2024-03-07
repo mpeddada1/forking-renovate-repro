@@ -5,11 +5,12 @@
   "packageRules": [
     {
       "matchPackagePatterns": [
-        "^com.google.cloud:google-cloud-shared-config"
+        "^com.google.cloud:google-cloud-shared-dependencies"
       ],
-      "matchDepTypes": ["parent"],
+      "matchDepTypes": ["parent-root"],
       "semanticCommitType": "build",
-      "semanticCommitScope": "deps"
+      "semanticCommitScope": "deps",
+      "enabled": true
     }
   ]
 }
