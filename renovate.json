@@ -2,6 +2,42 @@
   "extends": [
     "config:base"
   ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^.kokoro/presubmit/graalvm-.*.cfg$"
+      ],
+      "matchStrings": ["value: \"gcr.io/cloud-devrel-public-resources/graalvm.*:(?<currentValue>.*?)\""],
+      "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
+      "datasourceTemplate": "maven"
+    },
+    {
+      "fileMatch": [
+        "^.cloudbuild/cloudbuild.yaml"
+      ],
+      "matchStrings": ["  _JAVA_SHARED_CONFIG_VERSION: '(?<currentValue>.+?)'"],
+      "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
+      "datasourceTemplate": "maven"
+    },
+    {
+      "fileMatch": ["^sample_maven.cfg$"],
+      "matchStrings": ["value: \"graalvm:(?<currentValue>.*?)\""],
+      "depNameTemplate": "org.graalvm.sdk:graal-sdk",
+      "datasourceTemplate": "maven"
+    },
+    {
+      "fileMatch": ["^sample_docker.cfg$"],
+      "matchStrings": ["value: \"graalvm:(?<currentValue>.*?)\""],
+      "depNameTemplate": "ghcr.io/graalvm/jdk",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["^sample_dockerhub.cfg$"],
+      "matchStrings": ["value: \"ubuntu:(?<currentValue>.*?)\""],
+      "depNameTemplate": "ubuntu",
+      "datasourceTemplate": "docker"
+    }
+    ],
   "packageRules": [
     {
       "matchPackagePatterns": [
