@@ -41,7 +41,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": [
-        "^com.google.cloud:google-cloud-shared-dependencies"
+        "^com.google.cloud:google-cloud-shared-config"
       ],
       "matchDepTypes": ["parent-root"],
       "semanticCommitType": "build",
