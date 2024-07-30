@@ -19,7 +19,6 @@
         "^com.google.guava:"
       ],
       "versioning": "docker",
-      "allowedVersions": "[32.0.0,)"
     },
     {
       "matchPackagePatterns": [
