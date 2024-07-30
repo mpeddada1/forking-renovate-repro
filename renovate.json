@@ -1,6 +1,14 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":maintainLockFilesDisabled"
   ],
   "regexManagers": [
     {
@@ -39,6 +47,12 @@
     }
     ],
   "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^com.google.guava:"
+      ],
+      "versioning": "docker"
+    },
     {
       "matchPackagePatterns": [
         "^com.google.cloud:google-cloud-shared-config"
