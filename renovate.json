@@ -10,6 +10,9 @@
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled"
   ],
+   "ignorePaths": [
+    ".kokoro/requirements.txt"
+  ],
    "customManagers": [
     {
       "customType": "regex",
