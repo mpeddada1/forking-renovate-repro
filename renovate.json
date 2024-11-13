@@ -28,10 +28,6 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["com.google.cloud:google-cloud-shared-config"],
-      "allowedVersions": "^1.0.0" 
-    },
-    {
       "matchPackagePatterns": [
         "^com.google.guava:"
       ],
@@ -51,7 +47,8 @@
         "^org.codehaus.mojo:",
         "^org.sonatype.plugins:",
         "^com.coveo:",
-        "^com.google.cloud:native-image-shared-config"
+        "^com.google.cloud:native-image-shared-config",
+        "^com.google.cloud:google-cloud-shared-config"
       ],
       "semanticCommitType": "build",
       "semanticCommitScope": "deps",
