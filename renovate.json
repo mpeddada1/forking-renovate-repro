@@ -1,4 +1,7 @@
 {
+  "extends": [
+    "config:recommended"
+  ],
    "ignorePaths": [
     ".kokoro/requirements.txt"
   ],
@@ -13,22 +16,6 @@
       ],
       "depNameTemplate": "com.google.cloud:google-cloud-shared-config",
       "datasourceTemplate": "maven"
-    }
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "^org.apache.maven",
-        "^org.jacoco:",
-        "^org.codehaus.mojo:",
-        "^org.sonatype.plugins:",
-        "^com.coveo:",
-        "^com.google.cloud:native-image-shared-config",
-        "^com.google.cloud:google-cloud-shared-config"
-      ],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps",
-      "enabled": true
     }
   ]
 }
