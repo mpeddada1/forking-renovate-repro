@@ -28,6 +28,10 @@
   ],
   "packageRules": [
     {
+      "matchPackageNames": ["com.google.cloud:google-cloud-shared-config"],
+      "separateMajorReleases": false
+    },
+    {
       "matchPackagePatterns": [
         "^com.google.guava:"
       ],
