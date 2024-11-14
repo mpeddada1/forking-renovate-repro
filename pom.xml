@@ -14,7 +14,7 @@
         <module>sdk-platform-java-config</module>
     </modules>
     <properties>
-        <project.guava.version>30.1.1-android</project.guava.version>
+        <project.guava.version>30.1.1-jre</project.guava.version>
     </properties>
     <dependencies>
         <dependency>
