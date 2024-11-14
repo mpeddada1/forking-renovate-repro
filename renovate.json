@@ -33,7 +33,5 @@
       "semanticCommitScope": "deps",
       "enabled": true
     }
-  ],
-  "semanticCommits": "enabled",
-  "dependencyDashboard": true
+  ]
 }
