@@ -21,19 +21,6 @@
   "packageRules": [
     {
       "matchPackagePatterns": [
-        "^com.google.guava:"
-      ],
-      "versioning": "docker"
-    },
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "semanticCommitType": "deps",
-      "semanticCommitScope": null
-    },
-    {
-      "matchPackagePatterns": [
         "^org.apache.maven",
         "^org.jacoco:",
         "^org.codehaus.mojo:",
@@ -45,38 +32,6 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "deps",
       "enabled": true
-    },
-    {
-      "matchPackagePatterns": [
-        "^com.google.http-client:google-http-client",
-        "^com.google.cloud:libraries-bom",
-        "^com.google.cloud.samples:shared-configuration"
-      ],
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps"
-    },
-    {
-      "matchPackagePatterns": [
-        "^junit:junit",
-        "^com.google.truth:truth",
-        "^org.mockito:mockito-core",
-        "^org.objenesis:objenesis",
-        "^com.google.cloud:google-cloud-conformance-tests"
-      ],
-      "semanticCommitType": "test",
-      "semanticCommitScope": "deps"
-    },
-    {
-      "matchPackagePatterns": [
-        "^com.google.cloud:google-cloud-"
-      ],
-      "ignoreUnstable": false
-    },
-    {
-      "matchPackagePatterns": [
-        "^com.fasterxml.jackson.core"
-      ],
-      "groupName": "jackson dependencies"
     }
   ],
   "semanticCommits": "enabled",
