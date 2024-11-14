@@ -1,6 +1,5 @@
 {
   "extends": [
-    "config:recommended"
   ],
    "ignorePaths": [
     ".kokoro/requirements.txt"
